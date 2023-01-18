@@ -9,8 +9,24 @@
     },
     "vscode": {
       "extensions": [
-        "ms-vscode.live-server"
-      ]
+        "mkaufman.HTMLHint",
+        "esbenp.prettier-vscode",
+        "christian-kohler.path-intellisense"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "[html]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      }
+    }
+  },
+  "postCreateCommand": "npm install -g --no-package-lock live-server",
+  "postAttachCommand": "live-server --no-browser --port=8080",
+  "portsAttributes": {
+    "8080": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
     }
   }
 }
