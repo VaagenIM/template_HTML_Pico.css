@@ -1,6 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  
+
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -10,10 +10,7 @@
     "vscode": {
       "extensions": [
         "ms-vscode.live-server"
-      ],
-      "settings": {
-        "livePreview.defaultPreviewPath": "index.html"
-      }
+      ]
     }
   }
 }
