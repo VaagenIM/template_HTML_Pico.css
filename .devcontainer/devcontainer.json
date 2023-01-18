@@ -1,5 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "extensions": ["ms-vscode.live-server"],
   "customizations": {
     "codespaces": {
       "openFiles": [
