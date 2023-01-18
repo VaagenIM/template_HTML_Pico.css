@@ -1,18 +1,19 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "extensions": ["ms-vscode.live-server"],
+  
   "customizations": {
     "codespaces": {
       "openFiles": [
         "index.html"
       ]
+    },
+    "vscode": {
+      "extensions": [
+        "ms-vscode.live-server"
+      ],
+      "settings": {
+        "livePreview.defaultPreviewPath": "index.html"
+      }
     }
-  },
-  "portsAttributes": {
-    "3000": {
-      "label": "Application",
-      "onAutoForward": "openPreview"
-    }
-  },
-  "forwardPorts": [3000]
+  }
 }
